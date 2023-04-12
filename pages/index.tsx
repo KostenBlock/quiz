@@ -17,7 +17,7 @@ export default function Home(props: CrmI) {
     return <HomePage {...props} />;
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     try {
         const quizData = await getDirectusItemsByAxios('quiz');
         return {
