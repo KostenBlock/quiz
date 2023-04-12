@@ -1,0 +1,37 @@
+button {
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+
+:root {
+	--app-height: 100%;
+}
+
+body{
+}
+
+html {
+	scroll-behavior: smooth
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: "Inter", Styrene A LC, sans-serif;
+	vertical-align: baseline;
+	cursor: default;
+	font-variant-ligatures: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+input,
+textarea {
+	appearance: none;
+}

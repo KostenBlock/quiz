@@ -1,0 +1,163 @@
+@import "styles/global/sizes.scss";
+@import "styles/global/colors.scss";
+@import "styles/global/fonts.scss";
+
+// Общие стили
+.font-medium {
+	font-family: "Inter-Medium", Styrene A LC, sans-serif;
+}
+
+.font-bold {
+	font-family: "Inter-Bold", Styrene A LC, sans-serif;
+}
+
+.font-light {
+	font-family: "Inter-Light", Styrene A LC, sans-serif;
+}
+
+.font-regular {
+	font-family: "Inter", Styrene A LC, sans-serif;
+}
+
+.fixed-spaces {
+	white-space: pre-line;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.start-text {
+	text-align: start;
+}
+
+.end-text {
+	text-align: end;
+}
+
+// Главный экран
+.main-screen__header {
+	font-family: "Inter-Bold", Styrene A LC, sans-serif;
+	font-size: 55px;
+	line-height: 63px;
+	color: $black-90;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 22px;
+		line-height: 28px;
+	}
+}
+
+.main-screen__header-2 {
+	font-size: 30px;
+	line-height: 38px;
+	color: $black-90;
+
+	@media screen and (max-width: $tablet) {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	@media screen and (max-width: $mobile) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+.main-screen__address-text {
+	font-family: "Inter-Bold", Styrene A LC, sans-serif;
+	font-size: 25px;
+	line-height: 33px;
+	color: $black-90;
+
+	@media screen and (max-width: $tablet) {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	@media screen and (max-width: $mobile) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+// Блоки
+.block__header-1 {
+	font-family: "Inter", Styrene A LC, sans-serif;
+	font-size: 50px;
+	line-height: 58px;
+	color: $black-90;
+
+	@media screen and (max-width: $laptop-max) {
+		font-size: 40px;
+		line-height: 48px;
+	}
+
+	@media screen and (max-width: $laptop) {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	@media screen and (max-width: $tablet) {
+		font-size: 30px;
+		line-height: 38px;
+	}
+}
+
+.block__header-2 {
+	font-family: "Inter", Styrene A LC, sans-serif;
+	font-size: 30px;
+	line-height: 38px;
+	color: $black-90;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 22px;
+		line-height: 30px;
+	}
+}
+
+.block__header-3 {
+	font-family: "Inter", Styrene A LC, sans-serif;
+	font-size: 22px;
+	line-height: 30px;
+	color: $black-90;
+}
+
+.block__regular-text {
+	font-size: 18px;
+	line-height: 26px;
+	color: $black-90;
+}
+
+// кнопки
+.button__regular-text {
+	font-family: "Inter-Bold", Styrene A LC, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: $black-90;
+}
+
+.upper-text {
+	text-transform: uppercase;
+}
+
+// цвет текста
+.text-white {
+	color: $white-100;
+}
+
+.text-red {
+	color: $red-110;
+}
+
+.text-gray {
+	color: $gray-100;
+};
+
+.text-green {
+	color: $green-90;
+};
+
+.text-black {
+	color: $black-90;
+}

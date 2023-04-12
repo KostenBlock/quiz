@@ -1,0 +1,110 @@
+@import "styles/global/sizes.scss";
+@import "styles/global/colors.scss";
+
+.wrapper {
+	width: 100%;
+	height: auto;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+
+.wrapper-fixed {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	min-height: 100vh;
+	width: 100%;
+	z-index: 5;
+}
+
+.content {
+	width: 90%;
+	max-width: 90%;
+	margin: auto auto;
+	display: grid;
+
+	@media screen and (max-width: $laptop) {
+		max-width: 1200px;
+		width: 85%;
+	}
+
+	@media screen and (max-width: 1200px) {
+		max-width: 90%;
+		width: 90%;
+	}
+
+	@media screen and (max-width: $tablet) {
+		max-width: 95%;
+		width: 95%;
+	}
+}
+
+.column {
+	display: grid;
+	grid-auto-flow: column;
+}
+
+.row {
+	display: grid;
+	grid-auto-flow: row;
+}
+
+// image
+.picture-container {
+	position: relative;
+	overflow: hidden;
+	display: grid;
+	justify-content: stretch;
+	align-content: stretch;
+}
+
+.cover-image {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: 0.3s;
+}
+
+.contain-image {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	transition: 0.3s;
+	display: flex;
+	align-items: flex-start;
+}
+
+// gaps
+.plain-gap {
+	grid-gap: 20px;
+}
+
+.absolute {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+// loaders
+.loader-absolute {
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255, 248, 220, 0.445);
+}
+
+
+
+
