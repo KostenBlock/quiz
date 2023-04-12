@@ -1,0 +1,39 @@
+@import "styles/global/template";
+
+.toggle__button__component__container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle__button__container {
+  cursor: pointer;
+  padding: 1px;
+  display: grid;
+  align-content: center;
+  transition: all $time;
+
+  .toggle__tumbler {
+    cursor: pointer;
+    position: relative;
+    transition: all $time;
+  };
+};
+
+.label {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.disabled__component__element {
+  .toggle__button__container {
+    cursor: no-drop;
+    background-color: $gray-90 !important;
+  }
+  .label {
+    cursor: no-drop !important;
+    color: $gray-30;
+  }
+}

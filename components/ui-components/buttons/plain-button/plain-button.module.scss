@@ -1,0 +1,69 @@
+@import "styles/global/colors";
+@import "styles/global/sizes";
+
+.button__default {
+  outline: none;
+  background-color: $red-110;
+  color: $white-100;
+  border: 1px solid transparent;
+  width: 100%;
+  height: 100%;
+  min-height: 44px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: $light-radius;
+  position: relative;
+  overflow: hidden;
+  //&:hover {
+  //  box-shadow: 0 4px 6px rgba(74, 67, 67, 0.3);
+  //}
+  *{
+    cursor: pointer;
+  }
+
+  &:focus {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  &:disabled {
+    transform: none;
+    box-shadow: none;
+    cursor: no-drop !important;
+  }
+}
+
+.button__animate:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, hsla(0, 0%, 100%, .1)), color-stop(20%, hsla(0, 0%, 100%, .2)), to(hsla(0, 0%, 100%, .6)));
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, .1) 10%, hsla(0, 0%, 100%, .2) 20%, hsla(0, 0%, 100%, .6));
+  width: 20px;
+  transform: skewX(-45deg);
+  left: -20%;
+  animation: blick 1.5s infinite;
+  @keyframes blick {
+    0% {
+      left: -30px;
+
+    }
+    30% {
+      left: 110%;
+
+    }
+    100% {
+      left: 110%;
+
+    }
+  }
+}
+
+
+.button__active {
+  background-color: $white-100;
+  color: $black-90;
+  border: 1px solid $gray-90;
+}

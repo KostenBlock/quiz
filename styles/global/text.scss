@@ -84,23 +84,20 @@
 // Блоки
 .block__header-1 {
 	font-family: "Inter", Styrene A LC, sans-serif;
-	font-size: 50px;
-	line-height: 58px;
+	font-size: 30px;
+	line-height: 38px;
 	color: $black-90;
 
 	@media screen and (max-width: $laptop-max) {
-		font-size: 40px;
-		line-height: 48px;
+
 	}
 
 	@media screen and (max-width: $laptop) {
-		font-size: 30px;
-		line-height: 38px;
+
 	}
 
 	@media screen and (max-width: $tablet) {
-		font-size: 30px;
-		line-height: 38px;
+
 	}
 }
 
